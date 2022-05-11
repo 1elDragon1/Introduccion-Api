@@ -1,22 +1,16 @@
-const { application } = require('express');
-var express = require('express');
+const express = require('express');
+const port =3002;
 
+const bodyParser =require('body-parser');
+const routes = require('./routes/routes')
+const app = express();
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
+routes(app);
 
-app.get('/',function(req,res){
+const server=app.listen(port,(error)=>{if(error)return console.log('Error:$(error)');
 
-    res.send('hola mundo');
-});
-
-
-app.listen(3000,function(){
-
-    console.log('aplicacion ejemplo,escuchando el puerto 3000!');
-    
-app.get('/adios',function(req,res){
-
-    res.send('adios mundo');
-});
-
+console.log('el servidor escucha en el puerto ${server.address().port}');
 });
