@@ -1,22 +1,51 @@
 {
+  "homepage": ".",
+  
   "name": "proyecto-express",
+  
   "version": "1.0.0",
+  
   "description": "proyecto-express(trabajando con una api)",
+  
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  
+    
+  "test": "echo \"Error: no test specified\" && exit 1"
+  
   },
+  
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/1elDragon1/Introduccion-Api.git"
+  
+    
+  "type": "git",
+  
+    
+  "url": "git+https://github.com/1elDragon1/Introduccion-Api.git"
+  
   },
+  
   "author": "FIDEL DE LA ROCHA CARAVEO",
+  
   "license": "ISC",
+  
   "bugs": {
-    "url": "https://github.com/1elDragon1/Introduccion-Api/issues"
+  
+    
+  "url": "https://github.com/1elDragon1/Introduccion-Api/issues"
+  
   },
-  "homepage": "https://github.com/1elDragon1/Introduccion-Api#readme",
+  
+  
+  
   "dependencies": {
-    "express": "^4.18.1"
+  
+    
+  "express": "^4.18.1",
+  
+    
+  "mysql": "^2.18.1"
+  
   }
 }
